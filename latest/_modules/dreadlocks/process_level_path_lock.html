@@ -83,7 +83,10 @@
 
 <span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">_process_level_path_lock</span><span class="p">(</span>
-    <span class="n">normalized_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">shared</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">blocking</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">reentrant</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">normalized_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">shared</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="n">blocking</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">reentrant</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 <span class="p">):</span>
     <span class="k">with</span> <span class="n">fd_ref</span><span class="p">(</span><span class="n">normalized_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">fd</span><span class="p">:</span>
         <span class="k">with</span> <span class="n">process_level_lock</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">shared</span><span class="p">,</span> <span class="n">blocking</span><span class="p">,</span> <span class="n">reentrant</span><span class="p">):</span>
@@ -177,7 +180,6 @@
       <dd><a href="../../../dependabot/pip/sphinx-7.4.7/index.html">dependabot/pip/sphinx-7.4.7</a></dd>
       <dd><a href="../../../dependabot/pip/sphinx-automodapi-0.17.0/index.html">dependabot/pip/sphinx-automodapi-0.17.0</a></dd>
       <dd><a href="../../../dependabot/pip/tox-4.18.0/index.html">dependabot/pip/tox-4.18.0</a></dd>
-      <dd><a href="../../../dx-only-ruff-1/index.html">dx-only-ruff-1</a></dd>
       <dd><a href="../../../fix-cross-parallelization-deadlock-1/index.html">fix-cross-parallelization-deadlock-1</a></dd>
       <dd><a href="../../../fix/cd-docs-disable-schedule-1/index.html">fix/cd-docs-disable-schedule-1</a></dd>
     </dl>
